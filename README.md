@@ -1,2 +1,2 @@
-# hakimus.prudishness.io
+# hakimus.github.io
 My prudish website.
