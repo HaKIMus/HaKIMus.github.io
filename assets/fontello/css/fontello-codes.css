@@ -1,3 +1,7 @@
 
 .icon-search:before { content: '\e800'; } /* '' */
 .icon-info:before { content: '\e801'; } /* '' */
+.icon-cog-alt:before { content: '\e802'; } /* '' */
+.icon-user:before { content: '\e803'; } /* '' */
+.icon-github-circled:before { content: '\f09b'; } /* '' */
+.icon-gittip:before { content: '\f184'; } /* '' */
