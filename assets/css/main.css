@@ -11,7 +11,6 @@
 
 /*Navbar*/
     .navbar{
-
         background-color: #fff;
     }
 /**/
@@ -48,29 +47,52 @@
     /**/
     /*Head Main*/
         .header-main{
-            margin-top: 75px;
+            height: 350px;
         }
         .icon{
-            display: inline-block;
+            /*display: inline-block;*/
         }
         .icon-content{
             text-align: center;
         }
-        .icon > .icon-content > i{
+        .icon > .icon-content > a > i{
             display: block;
             font-size: 6.7em;
-            color: #000;
+            color: #4b6511;
+        }
+        .icon > .icon-content > a > i:hover{
+            color: #6f941c;
         }
         .icon > .icon-content > span{
             font-weight: 100;
             font-size: 2em;
             color: #222;
         }
+        .icon > .icon-content > span > a{
+            display: block;
+            width: 100%;
+            color: #333;
+            text-decoration: none;
+        }
+        .icon > .icon-content > span > a:hover, .icon > .icon-content > span > a:focus{
+            color: #4b6511;
+            text-decoration: none;
+        }
     /**/
 /**/
 
+/*Media*/
+    @media(max-width: 766px)
+    {
+        .icon > .icon-content > a > i{
+            font-size: 4.7em;
+        }
+    }
+/**/
+
 /*Other*/
-    .center{
+.center{
         margin: 0 auto;
     }
 /**/
+
