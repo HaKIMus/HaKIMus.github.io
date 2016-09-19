@@ -47,10 +47,8 @@
     /**/
     /*Head Main*/
         .header-main{
+            padding: 3%;
             height: 350px;
-        }
-        .icon{
-            /*display: inline-block;*/
         }
         .icon-content{
             text-align: center;
@@ -58,10 +56,10 @@
         .icon > .icon-content > a > i{
             display: block;
             font-size: 6.7em;
-            color: #4b6511;
+            color: #28282f;
         }
         .icon > .icon-content > a > i:hover{
-            color: #6f941c;
+            color: #0275d8;
         }
         .icon > .icon-content > span{
             font-weight: 100;
@@ -75,7 +73,7 @@
             text-decoration: none;
         }
         .icon > .icon-content > span > a:hover, .icon > .icon-content > span > a:focus{
-            color: #4b6511;
+            color: #0275d8;
             text-decoration: none;
         }
     /**/
