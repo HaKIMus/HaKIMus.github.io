@@ -25,9 +25,10 @@
             background: linear-gradient(
                     rgba(0, 0, 0, 0.65),
                     rgba(0, 0, 0, 0.2)), url('http://imgs.abduzeedo.com/files/wallpapers/wpw347/wp_iPad.jpg') no-repeat;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
         .header-description{
-            padding: 5em 0;;
+            padding: 5em 0;
         }
         .header-description > h2{
             font-weight: 700;
@@ -47,6 +48,7 @@
     /**/
     /*Head Main*/
         .header-main{
+            margin-bottom: 70px;
             padding: 3%;
             height: 350px;
         }
@@ -77,6 +79,28 @@
             text-decoration: none;
         }
     /**/
+    /*About Me*/
+        .about-me{
+            padding: 10px;
+            height: 420px;
+            background-color: #f9f9f9;
+        }
+        .about-me > .container > .row > .col-md-4 > img{
+            width: 100%;
+            height: 320px;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        .about-me > .container > .row > .col-md-8 > p{
+            width: 80%;
+            font-size: 19px;
+            text-align: justify;
+            text-indent: 10px;
+            color: #333;
+        }
+        .about-me > .container > .row > .col-md-8 > p > a{
+
+        }
+    /**/
 /**/
 
 /*Media*/
@@ -84,6 +108,20 @@
     {
         .icon > .icon-content > a > i{
             font-size: 4.7em;
+        }
+        .about-me{
+            height: 100%;
+        }
+        .about-me > .container > .row > .col-md-8 > p{
+            margin-top: 19px;
+            width: 100%;
+        }
+    }
+    @media(max-width: 544px)
+    {
+        .about-me{
+            margin: 170px 0 0 0;
+            padding: 0;
         }
     }
 /**/
