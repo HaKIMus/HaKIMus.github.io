@@ -83,7 +83,7 @@
     /*About Me*/
         .about-me{
             padding: 10px;
-            height: 100%;
+            min-height: 500px;
             background-color: #e9e9e9;
         }
         .about-me > .container > .row > h3{
@@ -124,11 +124,17 @@
             margin-top: 19px;
             width: 100%;
         }
+        .about-me > .container > .row > .col-md-4 > img{
+            display: block;
+            margin: 20px auto;
+            width: 65%;
+            height: 250px;
+        }
     }
     @media(max-width: 544px)
     {
         .about-me{
-            margin: 170px 0 0 0;
+            margin-top: 35%;
             padding: 0;
         }
     }
@@ -136,7 +142,7 @@
 
 /*Other*/
     .center{
-            margin: 0 auto;
+        margin: 0 auto;
     }
 /**/
 
