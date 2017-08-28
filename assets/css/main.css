@@ -52,7 +52,7 @@
             display: block;
             margin-bottom: 70px;
             padding: 3%;
-            min-height: 350px;
+            height: 350px;
         }
         .icon-content{
             text-align: center;
@@ -119,15 +119,17 @@
             text-indent: 10px;
             color: #333;
         }
-        .about-me > .container > .row > .col-md-8 > p > a{
-
-        }
     /**/
 /**/
 
 /*Media*/
     @media(max-width: 985px)
     {
+        .header-main{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            height: 100%;
+        }
         .about-me > .container > .row > .col-md-4 > img{
             width: 100%;
         }
@@ -170,7 +172,7 @@
             padding: 0;
         }
         .about-me > .container > .row > .col-md-4 > img{
-            width: 100%;
+            width: 70%;
         }
     }
 /**/
