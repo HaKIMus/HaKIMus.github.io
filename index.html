@@ -3,99 +3,122 @@
     <head>
         <meta charset="UTF-8">
         <title>HaKIM - Website.</title>
-        <link rel="shortcut icon" href="https://hakimus.github.io/assets/img/hakim_big_logo.png">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://hakimus.github.io/assets/css/main.css">
-        <link rel="stylesheet" href="https://hakimus.github.io/assets/fontello/css/fontello.css" type="text/css" />
+        <link rel="shortcut icon" href="./assets/img/hakim_big_logo.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/fontello/css/fontello.css" type="text/css" />
 
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#"><h1>HaKIM</h1></a>
-                <ul class="nav navbar-nav pull-md-right">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/HaKIMus/" target="_blank">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-me">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mailto:webdevhakim@gmail.com">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/sebastian-b-652981136" target="_blank">LinkedIn</a>
-                    </li>
-                </ul>
+                <a class="navbar-brand mr-auto" href="#">HaKIM</a>
+
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse ml-auto" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/HaKIMus/" target="_blank">GitHub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:webdevhakim@gmail.com">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/sebastian-b-652981136" target="_blank">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
         <header class="header">
             <div class="header-description">
-                <h2>HaKIM</h2>
+                <h1>HaKIM</h1>
+
                 <blockquote class="center">
-                    „Live what you løve.”
+                    „Imperare sibi maximum imperium est.”
                 </blockquote>
             </div>
         </header>
 
         <main>
             <header class="header-main">
-                <div class="container">
-                    <div class="icon col-sm-4">
+                <div class="container d-inline-flex">
+                    <div class="information-and-socials col-sm-4">
                         <div class="icon-content">
-                            <a href="https://github.com/HaKIMus/" target="_blank"><i class="icon-main icon-github-circled"></i></a>
-                            <span><a href="https://github.com/HaKIMus/" target="_blank">GitHub</a></span>
+                            <a href="https://github.com/HaKIMus/" target="_blank">
+                                <i class="icon-main icon-github-circled"></i>
+                                <span>GitHub</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="icon col-sm-4">
+                    <div class="information-and-socials col-sm-4">
                         <div class="icon-content">
-                            <a href="https://hakimus.github.io/#about-me"><i class="icon-main icon-user"></i></a>
-                            <span><a href="https://hakimus.github.io/#about-me">Me</a></span>
+                            <a href="https://hakimus.github.io/#about-me">
+                                <i class="icon-main icon-user"></i>
+                                <span>Me</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="icon col-sm-4">
+                    <div class="information-and-socials col-sm-4">
                         <div class="icon-content">
-                            <a href="https://github.com/HaKIMus/" target="_blank"><i class="icon-main icon-heart-circled"></i></a>
-                            <span><a href="https://github.com/HaKIMus/" target="_blank">Projects</a></span>
+                            <a href="https://github.com/HaKIMus/" target="_blank">
+                                <i class="icon-main icon-heart-circled"></i>
+                                <span>Projects</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </header>
+
             <section id="about-me">
-                <div class="about-me">
+                <article class="about-me">
                     <div class="container">
                         <div class="row">
-                            <h3>Few words about me...</h3>
-                            <div class="col-md-4">
-                                <img src="https://hakimus.github.io/assets/img/hakim_big_logo.png" alt="My logo in a web."/>
-                                <span class="tag tag-primary avatar-footer">That's my logo in a big web!</span>
-                            </div>
-                            <div class="col-md-8">
-                                <h4>Hello,</h4>
+                            <header class="col-md-8">
+                                <h3>Few words about me</h3>
+
+                                <div class="avatar-container">
+                                    <img src="./assets/img/hakim_big_logo.png" alt="HaKIM's avatar."/>
+                                </div>
+                            </header>
+
+                            <article class="col-md-8">
+                                <header>
+                                    <h4>Hello,</h4>
+                                </header>
+
                                 <p>I'm Sebastian.
-                                    I like to programming, mainly in PHP.
-                                    Beyond programming I... Hmm... Oh, yes! I read books and do workouts. Almost forget; I like to study about personal development as well.
+                                    I like to programming, mainly in <a href="http://www.php.net/" target="_blank">PHP</a>.
+                                    Beyond programming I... Hmm... Oh, yes! I read books and do workouts. Almost forget; I like to study about <a href="https://en.wikipedia.org/wiki/Personal_development" target="_blank">personal development</a> as well.
                                     Actually I want to write more but... That's what my whole life about.
                                 </p>
 
                                 <p>
-                                    I should to write about my skills but actions speak louder than words.
+                                    I should to write about my skills but I think, that actions speak louder than words.
                                     So, if you want to, you can find my projects on <a href="https://github.com/HaKIMus/">GitHub</a>.
-                                    You can also meet me on polish <a href="https://forum.pasja-informatyki.pl/">forum</a> for programmers where I do Redactor function.
+                                    You can also meet me on polish <a href="https://forum.pasja-informatyki.pl/">forum</a> for programmers.
                                 </p>
 
                                 <p>
-                                    My target in programming is to become an architect of software.
+                                    My target in programming is to become an <a href="https://en.wikipedia.org/wiki/Software_architecture" target="_blank">architect of software</a>.
                                 </p>
-                            </div>
+                            </article>
                         </div>
                     </div>
-                </div>
+                </article>
             </section>
         </main>
-        <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>

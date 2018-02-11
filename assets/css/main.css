@@ -1,119 +1,164 @@
 /*Basic*/
-    body{
+    body {
         background-color: #ffffff;
         font-family: 'Lato', sans-serif;
         color: #666;
     }
-    h1{
+/**/
+
+/*Navbar*/
+    .navbar {
+        background-color: #fff;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .navbar-brand {
         font-size: 25px;
     }
 /**/
 
-/*Navbar*/
-    .navbar{
-        background-color: #fff;
-        border-bottom: 1px solid #e0e0e0;
+/*Header*/
+    .header {
+        margin-top: 64px;
+        width: 100%;
+        height: 350px;
+        background: linear-gradient(
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.2)), url('../img/header-background.png') no-repeat;
+        background-size: cover;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    .header-description {
+        padding: 5em 0;
+    }
+
+    .header-description > h1 {
+        font-weight: 700;
+        font-size: 4em;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .header-description > blockquote {
+        max-width: 620px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 100;
+        font-size: 2em;
+        color: #ffffff;
     }
 /**/
 
 /*Main*/
-    main{
+    main {
     }
-    /*Header*/
-        .header{
-            width: 100%;
-            height: 350px;
-            background: linear-gradient(
-                    rgba(0, 0, 0, 0.65),
-                    rgba(0, 0, 0, 0.2)), url('https://hakimus.github.io/assets/img/header-wallpaper.jpg') no-repeat;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        }
-        .header-description{
-            padding: 5em 0;
-        }
-        .header-description > h2{
-            font-weight: 700;
-            font-size: 4em;
-            color: #fff;
-            text-transform: uppercase;
-            text-align: center;
-        }
-        .header-description > blockquote{
-            max-width: 620px;
-            margin: 0 auto;
-            text-align: center;
-            font-weight: 100;
-            font-size: 2em;
-            color: #ffffff;
-        }
-    /**/
-    /*Head Main*/
-        .header-main{
-            display: block;
-            margin-bottom: 70px;
+    /*Header Main*/
+        .header-main {
+            display: flex;
+            flex-wrap: wrap;
             padding: 3%;
-            height: 350px;
+            min-height: 550px;
+            align-items: center;
         }
-        .icon-content{
+
+        .header-main > .container {
+            flex-wrap: wrap;
+        }
+
+        .icon-content {
             text-align: center;
         }
-        .icon > .icon-content > a > i{
+
+        .information-and-socials > .icon-content > a > i {
             display: block;
             font-size: 6.7em;
             color: #28282f;
         }
-        .icon > .icon-content > a > i:hover{
+
+        .information-and-socials > .icon-content > a:hover i,
+        .information-and-socials > .icon-content > a:hover span {
             color: #0275d8;
         }
-        .icon > .icon-content > span{
+
+        .information-and-socials > .icon-content > a > span {
             font-weight: 100;
             font-size: 2em;
             color: #222;
         }
-        .icon > .icon-content > span > a{
+
+        .information-and-socials > .icon-content > a > span {
             display: block;
             width: 100%;
             color: #333;
             text-decoration: none;
         }
-        .icon > .icon-content > span > a:hover, .icon > .icon-content > span > a:focus{
+
+        .information-and-socials > .icon-content > a:hover,
+        .information-and-socials > .icon-content > a:focus {
             color: #0275d8;
             text-decoration: none;
         }
     /**/
     /*About Me*/
-        .about-me{
+        .about-me {
+            display: flex;
+            flex-wrap: wrap;
             padding: 10px;
             min-height: 500px;
             background-color: #e9e9e9;
             font-family: 'Lato', sans-serif;
         }
-        .about-me > .container > .row > h3{
-            margin-left: 15px;
-            color: #111;
+
+        .about-me > .container > .row {
+            justify-content: center;
         }
-        .about-me > .container > .row > .col-md-4 > img{
-            margin-top: 25px;
-            width: 250px;
-            height: 230px;
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+        .about-me > .container > .row > header {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #0088cc;
+            margin-top: 20px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
         }
-        .avatar-footer{
-            width: 250px;
+
+        .about-me > .container > .row > header > h3 {
+            color: #000;
+            font-size: 2.3em;
+            font-weight: 100;
+            letter-spacing: 1px;
         }
-        .about-me > .container > .row > .col-md-8 > h4{
+
+        .about-me > .container > .row > header > .avatar-container {
+            flex-wrap: wrap;
+        }
+
+        .about-me > .container > .row > header > .avatar-container > img {
+            flex: 1 100%;
+            width: 150px;
+            height: 150px;
+            border-radius: 360px;
+            border: 2px solid #0275d8;
+            background: #fff;
+            object-fit: contain;
+        }
+
+        .about-me > .container > .row > article > header > h4 {
             margin-top: 25px;
             padding: 5px;
-            width: 80%;
+            width: 100%;
             font-size: 23px;
             text-align: justify;
             text-indent: 10px;
             color: #444;
         }
-        .about-me > .container > .row > .col-md-8 > p{
+
+        .about-me > .container > .row > article > p {
             margin-top: 25px;
             padding: 5px;
-            width: 80%;
             font-size: 19px;
             text-align: justify;
             text-indent: 10px;
@@ -128,7 +173,7 @@
         .header-main{
             margin-top: 50px;
             margin-bottom: 50px;
-            height: 100%;
+            min-height: 350px;
         }
         .about-me > .container > .row > .col-md-4 > img{
             width: 100%;
@@ -140,45 +185,55 @@
 
     @media(max-width: 766px)
     {
-        .icon > .icon-content > a > i{
-            font-size: 4.7em;
-        }
-        .about-me{
-            height: 100%;
-        }
-        .about-me > .container > .row > .col-md-8 > p{
-            margin-top: 19px;
+        .information-and-socials {
+            flex: 1 100%;
             width: 100%;
         }
-        .avatar-footer{
-            display: none;
-            width: 0;
-            height: 0;
-            position: absolute;
-            top: -9999px;
-            left: -9999px;
+
+        .information-and-socials > .icon-content > a > i {
+            font-size: 4.7em;
         }
-        .about-me > .container > .row > .col-md-4 > img{
-            display: block;
-            margin: 20px auto;
-            width: 320px;
-            height: 240px;
+
+        .about-me > .container > .row > header > h3 {
+            font-size: 1.8em;
+        }
+
+
+        .about-me > .container > .row > article > p {
+            margin-top: 19px;
+            width: 100%;
         }
     }
     @media(max-width: 544px)
     {
-        .about-me{
-            margin-top: 50px;
-            padding: 0;
+        .information-and-socials {
+            margin-top: 30px;
         }
-        .about-me > .container > .row > .col-md-4 > img{
-            width: 70%;
+
+        .information-and-socials > .icon-content > a > span {
+            display: none;
+        }
+
+        .about-me {
+            margin-top: 50px;
+        }
+
+        .about-me > .container > .row > header {
+            justify-content: center;
+            flex-wrap: wrap-reverse;
+        }
+
+        .about-me > .container > .row > header > h3 {
+            margin-top: 20px;
+        }
+
+        .about-me > .container > .row > .col-md-4 > img {
         }
     }
 /**/
 
 /*Other*/
-    .center{
+    .center {
         margin: 0 auto;
     }
 /**/
