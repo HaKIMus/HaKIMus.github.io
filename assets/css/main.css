@@ -116,8 +116,8 @@
         }
 
         .about-me > .container > .row > header {
-            padding-bottom: 10px;
-            border-bottom: 1px solid #0088cc;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #c1c1c1;
             margin-top: 20px;
             display: flex;
             width: 100%;
@@ -144,6 +144,7 @@
             border: 2px solid #0275d8;
             background: #fff;
             object-fit: contain;
+            object-position: right;
         }
 
         .about-me > .container > .row > article > header > h4 {
