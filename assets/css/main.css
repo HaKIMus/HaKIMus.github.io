@@ -105,7 +105,7 @@
         .about-me {
             display: flex;
             flex-wrap: wrap;
-            padding: 10px;
+            padding: 10px 10px 30px 10px;
             min-height: 500px;
             background-color: #e9e9e9;
             font-family: 'Lato', sans-serif;
@@ -166,6 +166,59 @@
             color: #333;
         }
     /**/
+    /*Skills*/
+        .skills {
+            margin-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills > header {
+            text-align: center;
+            flex: 1 100%;
+        }
+
+        .skills > header > h4 {
+            text-transform: uppercase;
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: #000;
+            margin-bottom: 50px;
+        }
+
+        .skills > article {
+            width: 230px;
+            height: 230px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skills > article > a {
+            color: inherit;
+        }
+
+        .skills > article > a:hover,
+        .skills > article > a:focus {
+            text-decoration: none;
+        }
+
+        .skills > article > a > img {
+            width: 140px;
+            height: 140px;
+            object-fit: contain;
+        }
+
+        .skills > article > a > h5 {
+            flex: 1 100%;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1em;
+        }
+    /*8/
 /**/
 
 /*Media*/
